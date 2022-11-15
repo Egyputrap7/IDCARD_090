@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <style>
+		fieldset{
+			width: fit-content; 
+			border-color: blue; 
+			box-shadow: 2px 2px 4px #333;
+                        alignment-adjust: central;
+                        border-radius: 10px
+
+		}
+	</style>
+    <body>
+        <div>Form data</div>
+        <hr/>
+        <fieldset >
+         <legend align="center">Form Insert</legend>
+
+            <form action="/insert" enctype="multipart/form-data" method="post">
+                <p >
+                  Masukan Nama:  <input type="text" name="nama"/>           
+                 </p>
+                 <p >
+                  Masukan Tanggal Lahir: <input type="date" name="tanggal"/>           
+                 </p>
+                 <p >
+                    Import Gambar/Foto: <input type="file" name="foto" accept="image/png,image/jpeg"/>           
+                 </p>
+                 <p >
+                     <input type="submit" value="Send" />           
+                 </p>
+            </form>
+        </fieldset>
+    </body>
+</html>
